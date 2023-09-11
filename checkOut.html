@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out - InRoomAmenity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="navbar--container light--navbar">
+            <nav class="container-fluid d-flex justify-content-between align-items-center">
+                <div class="logo--container">
+                    <a href="index.html">
+                        <img src="./assets/Img/logo-dark.png" alt="logo">
+                    </a>
+                </div>
+                <button class="menu-toggle light-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-collapse d-flex flex-column flex-lg-row align-items-center justify-content-lg-between">
+                    <button class="menu-toggle-close">
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav--container d-flex flex-column flex-lg-row align-items-start align-items-lg-center">
+                        <li class="nav-link d-flex align-items-center">
+                            <a class="light--link" href="category.html">FOOD</a>
+                        </li>
+                        <li class="nav-link d-flex align-items-center">
+                            <a class="light--link" href="category.html">BEVERAGE</a>
+                        </li>
+                        <li class="nav-link d-flex align-items-center">
+                            <a class="light--link" href="category.html">Recommended Arangements</a>
+                        </li>
+                    </ul>
+                    <div class="btn-group--container d-flex flex-column flex-lg-row align-items-center">
+                        <a href="" class="btn--outline icon--btn">
+                            <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.249 4.64504C12.249 5.61176 11.8539 6.53889 11.1507 7.22247C10.4474 7.90604 9.49356 8.29007 8.499 8.29007C7.50444 8.29007 6.55061 7.90604 5.84735 7.22247C5.14409 6.53889 4.749 5.61176 4.749 4.64504C4.749 3.67831 5.14409 2.75118 5.84735 2.06761C6.55061 1.38403 7.50444 1 8.499 1C9.49356 1 10.4474 1.38403 11.1507 2.06761C11.8539 2.75118 12.249 3.67831 12.249 4.64504ZM1 18.3679C1.03213 16.4553 1.83634 14.6316 3.23918 13.2901C4.64202 11.9486 6.53109 11.1968 8.499 11.1968C10.4669 11.1968 12.356 11.9486 13.7588 13.2901C15.1617 14.6316 15.9659 16.4553 15.998 18.3679C13.6454 19.4164 11.0871 19.9576 8.499 19.9542C5.823 19.9542 3.283 19.3865 1 18.3679Z" stroke="#CE9C5D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                          
+                        </a>
+                        <a href="cart.html" class="btn--transparent">
+                            <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.6266 18.93L32.5892 5.43C32.5964 5.37022 32.5964 5.30979 32.5892 5.25C32.5892 5.05109 32.5112 4.86033 32.3723 4.71967C32.2334 4.57902 32.045 4.5 31.8486 4.5H8.10287L7.05113 0.532503C7.00493 0.378114 6.9108 0.242924 6.78271 0.146998C6.65462 0.0510726 6.4994 -0.000476135 6.34009 3.31441e-06H0.740665C0.544228 3.31441e-06 0.355837 0.0790209 0.216936 0.219673C0.0780341 0.360325 0 0.551091 0 0.750003C0 0.948916 0.0780341 1.13968 0.216936 1.28033C0.355837 1.42099 0.544228 1.5 0.740665 1.5H5.77718L10.3693 18.9675C10.4003 19.0721 10.4535 19.1686 10.5251 19.2502C10.5968 19.3318 10.6851 19.3966 10.7841 19.44C10.5075 19.9118 10.3641 20.4514 10.3693 21C10.3693 21.7957 10.6814 22.5587 11.237 23.1213C11.7927 23.6839 12.5462 24 13.332 24C14.1177 24 14.8713 23.6839 15.4269 23.1213C15.9825 22.5587 16.2946 21.7957 16.2946 21C16.2915 20.4724 16.1509 19.955 15.8873 19.5H24.1086C23.845 19.955 23.7044 20.4724 23.7013 21C23.7013 21.7957 24.0134 22.5587 24.569 23.1213C25.1246 23.6839 25.8782 24 26.6639 24C27.4497 24 28.2032 23.6839 28.7588 23.1213C29.3144 22.5587 29.6266 21.7957 29.6266 21C29.6242 20.446 29.4704 19.9034 29.1822 19.4325C29.2899 19.3897 29.3862 19.322 29.4633 19.2347C29.5405 19.1474 29.5964 19.0431 29.6266 18.93ZM26.5825 6H30.9228L30.2636 9H26.2566L26.5825 6ZM8.49542 6H13.406L13.7319 9H9.28794L8.49542 6ZM10.4804 13.5L9.68789 10.5H13.9023L14.2356 13.5H10.4804ZM10.8804 15H14.3985L14.7244 18H11.6803L10.8804 15ZM13.332 22.5C13.039 22.5 12.7526 22.412 12.509 22.2472C12.2654 22.0824 12.0755 21.8481 11.9634 21.574C11.8513 21.2999 11.8219 20.9983 11.8791 20.7074C11.9363 20.4164 12.0773 20.1491 12.2845 19.9393C12.4917 19.7296 12.7556 19.5867 13.043 19.5288C13.3303 19.4709 13.6282 19.5007 13.8988 19.6142C14.1695 19.7277 14.4009 19.92 14.5636 20.1666C14.7264 20.4133 14.8133 20.7033 14.8133 21C14.8133 21.3978 14.6572 21.7794 14.3794 22.0607C14.1016 22.342 13.7248 22.5 13.332 22.5ZM19.2573 18H16.2131L15.8873 15H19.2573V18ZM19.2573 13.5H15.7243L15.391 10.5H19.2573V13.5ZM19.2573 9H15.2281L14.9022 6H19.2573V9ZM23.7827 18H20.7386V15H24.1086L23.7827 18ZM24.279 13.5H20.7386V10.5H24.6049L24.279 13.5ZM24.7752 9H20.7386V6H25.0937L24.7752 9ZM26.6639 22.5C26.3709 22.5 26.0845 22.412 25.8409 22.2472C25.5973 22.0824 25.4075 21.8481 25.2954 21.574C25.1832 21.2999 25.1539 20.9983 25.2111 20.7074C25.2682 20.4164 25.4093 20.1491 25.6165 19.9393C25.8236 19.7296 26.0876 19.5867 26.3749 19.5288C26.6623 19.4709 26.9601 19.5007 27.2308 19.6142C27.5015 19.7277 27.7328 19.92 27.8956 20.1666C28.0584 20.4133 28.1453 20.7033 28.1453 21C28.1453 21.3978 27.9892 21.7794 27.7114 22.0607C27.4336 22.342 27.0568 22.5 26.6639 22.5ZM28.2934 18H25.2715L25.5974 15H28.9526L28.2934 18ZM25.7677 13.5L26.101 10.5H29.9451L29.2859 13.5H25.7677Z" fill="#CE9C5D"/>
+                                </svg>                            
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="checkout--wrapper container-fluid d-flex flex-column align-items-start justify-content-start">
+                <button onclick="history.back()" class="btn--outline text--btn">
+                    <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 1L1 7L7 13" stroke="#CE9C5D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1.5 7H23.5" stroke="#CE9C5D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    <p>Back</p>                            
+                </button>
+                <section class="checkout--container row container-fluid">
+                    <section class="checkout-main col-12 col-lg-8 d-flex flex-column">
+                        <section class="content content-1 d-flex align-items-start justify-content-start">
+                            <h2>
+                                1. Hotel Address:
+                            </h2>
+                            <p class="addres">
+                               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, vitae?
+                            </p>
+                        </section>
+                        <section class="divider">
+                            <svg width="767" height="2" viewBox="0 0 767 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1H766" stroke="#D3D2D5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 10"/>
+                                </svg>                                
+                        </section>
+                        <section class="content content-2 d-flex flex-column">
+                            <h2>
+                                2. Select Your Payment Method:
+                            </h2>
+                            <section class="payment row">
+                                <div class="method col-lg flex-column d-flex">
+                                    <div class="d-flex align-items-center input position-relative">
+                                        <input type="radio" name="cc" id="cc" class="position-absolute opacity-0" checked>
+                                        <label for="cc" class="custom-radio cc">
+                                            <div></div>
+                                        </label>
+                                        <label for="cc" class="cc">Credit or Debit Card</label>
+                                    </div>
+                                    <div class="options cc-img row">
+                                        <div class="col-3 isActive"></div>
+                                        <div class="col-3"></div>
+                                        <div class="col-3"></div>
+                                        <div class="col-3"></div>
+                                        <div class="col-3"></div>
+                                        <div class="col-3"></div>
+                                        <div class="col-3"></div>
+                                    </div>
+                                </div>
+                                <div class="method col-md flex-column d-flex">
+                                    <div class="d-flex align-items-center input position-relative">
+                                        <input type="radio" name="net" id="net" class="position-absolute opacity-0">
+                                        <label for="net" class="custom-radio net">
+                                            <div></div>
+                                        </label>
+                                        <label for="net" class="net">Net Banking</label>
+                                    </div>
+                                    <div class="options">
+                                        <select name="bank" id="bank">
+                                            <option value="ABCBank">ABC Bank</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="method col-md flex-column d-flex">
+                                    <div class="d-flex align-items-center input position-relative">
+                                        <input type="radio" name="other" id="other" class="position-absolute opacity-0">
+                                        <label for="other" class="custom-radio other">
+                                            <div></div>
+                                        </label>
+                                        <label for="other" class="other">Other UPI Apps</label>
+                                    </div>
+                                    <div class="text-input options d-flex flex-column align-items-center">
+                                        <input type="text" name="othertext" id="othertext" placeholder="Ex:Mobileno@upi">
+                                        <button type="button" class="sec--btn col d-flex align-items-center justify-content-center">
+                                            <p class="m-0">Verify</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="divider">
+                            <svg width="767" height="2" viewBox="0 0 767 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1H766" stroke="#D3D2D5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 10"/>
+                                </svg>                                
+                        </section>
+                        <section class="content content-2 d-flex align-items-center">
+                            <h2 class="m-0">
+                                3. Promo & Offers:
+                            </h2>
+                            <div class="promo d-flex align-items-center">
+                                <input type="text" name="promo" id="promo" placeholder="Enter Your Promo Code">
+                                <button type="button" class="main--btn col d-flex align-items-center justify-content-center">
+                                    <p class="m-0">Submit</p>
+                                </button>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="order-sum col d-flex flex-column">
+                        <article class="title d-flex align-items-center justify-content-center">
+                            <h3 class="m-0">
+                                Order Summary
+                            </h3>
+                        </article>
+                        <article class="body d-flex flex-column">
+                            <div class="text d-flex align-items-end justify-content-between">
+                                <p class="main">
+                                    Chocolate Covered Strawberries
+                                </p>
+                                <p class="sec">
+                                    $25.00
+                                </p>
+                            </div>
+                            <section class="divider">
+                                <svg width="312" height="3" viewBox="0 0 312 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 2.01978L311 1.00004" stroke="#D3D2D5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 10"/>
+                                    </svg>                                                                  
+                            </section>
+                            <div class="text d-flex align-items-center justify-content-between">
+                                <p class="main">
+                                    Tax
+                                </p>
+                                <p class="sec">
+                                    $1.75
+                                </p>
+                            </div>
+                            <section class="divider">
+                                <svg width="312" height="3" viewBox="0 0 312 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 2.01978L311 1.00004" stroke="#D3D2D5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 10"/>
+                                    </svg>                                                                  
+                            </section>
+                            <div class="text d-flex align-items-center justify-content-between">
+                                <p class="main">
+                                    Gratuity
+                                </p>
+                                <p class="sec d-flex align-items-center gap-2">
+                                    15%
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 0.999999" stroke="#787878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                </p>
+                            </div>
+                            <section class="divider">
+                                <svg width="312" height="3" viewBox="0 0 312 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 2.01978L311 1.00004" stroke="#D3D2D5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 10"/>
+                                    </svg>                                                                  
+                            </section>
+                            <div class="text d-flex align-items-center justify-content-between">
+                                <p class="main">
+                                    Total
+                                </p>
+                                <p class="sec">
+                                    $25.00
+                                </p>
+                            </div>
+                        </article>
+                        <article class="footer d-flex align-items-center">
+                            <div class="text d-flex align-items-center justify-content-between">
+                                <p class="main m-0">
+                                    Total Amount Due
+                                </p>
+                                <p class="sec m-0">
+                                    $25.00
+                                </p>
+                            </div>
+                        </article>
+                        <section class="btn--group d-flex align-items-center justify-content-center">
+                            <a href="orderConfirm.html" class="main--btn col d-flex align-items-center justify-content-center">
+                                <p class="m-0">PLACE AN ORDER</p>
+                            </a>
+                        </section>
+                    </section>
+                </section>
+                <form action="" class="checkout-form d-flex flex-column">
+                    <article class="title d-flex align-items-center justify-content-center">
+                        <h3 class="m-0">
+                            Guest Room Delivery
+                        </h3>
+                    </article>
+                    <section class="input-group row">
+                        <div class="row">
+                            <div class="position-relative custom-input-text col-12 col-lg d-flex justify-content-between align-items-center">
+                                <div class="input position-relative d-flex align-items-center justify-content-start">
+                                    <input required type="text" name="Fullname" id="Fullname" class="position-absolute" placeholder="placeholder">
+                                    <label for="Fullname">Full name <span>*</span></label>
+                                </div>
+                                <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.249 3.64504C11.249 4.61176 10.8539 5.53889 10.1507 6.22247C9.44739 6.90604 8.49356 7.29007 7.499 7.29007C6.50444 7.29007 5.55061 6.90604 4.84735 6.22247C4.14409 5.53889 3.749 4.61176 3.749 3.64504C3.749 2.67831 4.14409 1.75118 4.84735 1.06761C5.55061 0.384029 6.50444 0 7.499 0C8.49356 0 9.44739 0.384029 10.1507 1.06761C10.8539 1.75118 11.249 2.67831 11.249 3.64504ZM0 17.3679C0.0321348 15.4553 0.836338 13.6316 2.23918 12.2901C3.64202 10.9486 5.53109 10.1968 7.499 10.1968C9.46691 10.1968 11.356 10.9486 12.7588 12.2901C14.1617 13.6316 14.9659 15.4553 14.998 17.3679C12.6454 18.4164 10.0871 18.9576 7.499 18.9542C4.823 18.9542 2.283 18.3865 0 17.3679Z" fill="#787878"/>
+                                    </svg>                                    
+                            </div>
+                            <div class="position-relative custom-input-text col-12 col-lg d-flex justify-content-between align-items-center">
+                                <div class="input position-relative d-flex align-items-center justify-content-start">
+                                    <input required type="text" name="Sendersemail" id="Sendersemail" class="position-absolute" placeholder="placeholder">
+                                    <label for="Sendersemail">Sender’s email <span>*</span></label>
+                                </div>
+                                <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 4.91998V13.5C0 14.2956 0.316071 15.0587 0.87868 15.6213C1.44129 16.1839 2.20435 16.5 3 16.5H18C18.7956 16.5 19.5587 16.1839 20.1213 15.6213C20.6839 15.0587 21 14.2956 21 13.5V4.91998L12.072 10.413C11.5992 10.7038 11.0551 10.8578 10.5 10.8578C9.94494 10.8578 9.40076 10.7038 8.928 10.413L0 4.91998Z" fill="#787878"/>
+                                    <path d="M21 3.158V3C21 2.20435 20.6839 1.44129 20.1213 0.87868C19.5587 0.316071 18.7956 0 18 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.316071 1.44129 0 2.20435 0 3V3.158L9.714 9.136C9.95038 9.28143 10.2225 9.35842 10.5 9.35842C10.7775 9.35842 11.0496 9.28143 11.286 9.136L21 3.158Z" fill="#787878"/>
+                                    </svg>                                                                       
+                            </div>
+                            <div class="position-relative custom-input-text col-12 col-lg d-flex justify-content-between align-items-center">
+                                <div class="input position-relative d-flex align-items-center justify-content-start">
+                                    <input required type="text" name="Telephonenumber" id="Telephonenumber" class="position-absolute" placeholder="placeholder">
+                                    <label for="Telephonenumber">Telephone number <span>*</span></label>
+                                </div>
+                                <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 3.17399C0 2.3322 0.316071 1.52488 0.87868 0.929641C1.44129 0.334402 2.20435 0 3 0H4.372C5.232 0 5.982 0.619987 6.191 1.50236L7.296 6.18188C7.38554 6.56064 7.36746 6.95894 7.24401 7.32687C7.12055 7.6948 6.89723 8.01602 6.602 8.25027L5.309 9.27652C5.174 9.38338 5.145 9.53996 5.183 9.64894C5.74738 11.2728 6.6386 12.7475 7.79495 13.9709C8.9513 15.1943 10.3451 16.1372 11.88 16.7343C11.983 16.7746 12.13 16.7439 12.232 16.601L13.202 15.233C13.4234 14.9207 13.727 14.6844 14.0748 14.5538C14.4225 14.4232 14.799 14.4041 15.157 14.4988L19.58 15.6679C20.414 15.889 21 16.6825 21 17.5934V19.044C21 19.8858 20.6839 20.6931 20.1213 21.2883C19.5587 21.8835 18.7956 22.2179 18 22.2179H15.75C7.052 22.2179 0 14.757 0 5.55449V3.17399Z" fill="#787878"/>
+                                    </svg>                                                                                                         
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-between p-0">
+                            <div class="position-relative custom-input-text col-12 col-md-5 col-lg d-flex justify-content-between align-items-center">
+                                <div class="input position-relative d-flex align-items-center justify-content-start">
+                                    <input type="text" name="Reservation" id="Reservation" class="position-absolute" placeholder="placeholder">
+                                    <label for="Reservation">Reservation No.(opt)</label>
+                                </div>                                                                                                       
+                            </div>
+                            <div class="position-relative custom-input-text col-12 col-md-5 col-lg d-flex justify-content-between align-items-center">
+                                <div class="input position-relative d-flex align-items-center justify-content-start">
+                                    <input type="text" name="Guests" id="Guests" class="position-absolute" placeholder="placeholder">
+                                    <label for="Guests">Guests</label>
+                                </div>
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L7 7L13 0.999999" stroke="#787878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                                                                                               
+                            </div>
+                            <div class="position-relative custom-input-text col-12 col-md-5 col-lg d-flex justify-content-between align-items-center">
+                                <div class="input position-relative d-flex align-items-center justify-content-start">
+                                    <input required type="text" name="date" id="date" class="position-absolute" placeholder="placeholder">
+                                    <label for="date">Arrival date <span>*</span></label>
+                                </div>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 0.25C4.69891 0.25 4.88968 0.329018 5.03033 0.46967C5.17098 0.610322 5.25 0.801088 5.25 1V2.5H14.25V1C14.25 0.801088 14.329 0.610322 14.4697 0.46967C14.6103 0.329018 14.8011 0.25 15 0.25C15.1989 0.25 15.3897 0.329018 15.5303 0.46967C15.671 0.610322 15.75 0.801088 15.75 1V2.5H16.5C17.2956 2.5 18.0587 2.81607 18.6213 3.37868C19.1839 3.94129 19.5 4.70435 19.5 5.5V16.75C19.5 17.5456 19.1839 18.3087 18.6213 18.8713C18.0587 19.4339 17.2956 19.75 16.5 19.75H3C2.20435 19.75 1.44129 19.4339 0.87868 18.8713C0.316071 18.3087 0 17.5456 0 16.75V5.5C0 4.70435 0.316071 3.94129 0.87868 3.37868C1.44129 2.81607 2.20435 2.5 3 2.5H3.75V1C3.75 0.801088 3.82902 0.610322 3.96967 0.46967C4.11032 0.329018 4.30109 0.25 4.5 0.25ZM18 9.25C18 8.85218 17.842 8.47064 17.5607 8.18934C17.2794 7.90804 16.8978 7.75 16.5 7.75H3C2.60218 7.75 2.22064 7.90804 1.93934 8.18934C1.65804 8.47064 1.5 8.85218 1.5 9.25V16.75C1.5 17.1478 1.65804 17.5294 1.93934 17.8107C2.22064 18.092 2.60218 18.25 3 18.25H16.5C16.8978 18.25 17.2794 18.092 17.5607 17.8107C17.842 17.5294 18 17.1478 18 16.75V9.25Z" fill="#787878"/>
+                                    </svg>                                                                                                                                              
+                            </div>
+                            <div class="position-relative custom-input-text col-12 col-md-5 col-lg d-flex justify-content-between align-items-center">
+                                <div class="input position-relative d-flex align-items-center justify-content-start">
+                                    <input required type="text" name="time" id="time" class="position-absolute" placeholder="placeholder">
+                                    <label for="time">Arrival time <span>*</span></label>
+                                </div>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.75 0.25C4.365 0.25 0 4.615 0 10C0 15.385 4.365 19.75 9.75 19.75C15.135 19.75 19.5 15.385 19.5 10C19.5 4.615 15.135 0.25 9.75 0.25ZM10.5 4C10.5 3.80109 10.421 3.61032 10.2803 3.46967C10.1397 3.32902 9.94891 3.25 9.75 3.25C9.55109 3.25 9.36032 3.32902 9.21967 3.46967C9.07902 3.61032 9 3.80109 9 4V10C9 10.414 9.336 10.75 9.75 10.75H14.25C14.4489 10.75 14.6397 10.671 14.7803 10.5303C14.921 10.3897 15 10.1989 15 10C15 9.80109 14.921 9.61032 14.7803 9.46967C14.6397 9.32902 14.4489 9.25 14.25 9.25H10.5V4Z" fill="#787878"/>
+                                    </svg>                                                                                                                                                                                     
+                            </div>
+                            <div class="position-relative custom-input-text col-12 col-md-5 col-lg d-flex justify-content-between align-items-center">
+                                <div class="input position-relative d-flex align-items-center justify-content-start">
+                                    <input required type="text" name="Deliverydate" id="Deliverydate" class="position-absolute" placeholder="placeholder">
+                                    <label for="Deliverydate">Delivery date <span>*</span></label>
+                                </div>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 0C4.69891 0 4.88968 0.0790175 5.03033 0.21967C5.17098 0.360322 5.25 0.551088 5.25 0.75V2.25H14.25V0.75C14.25 0.551088 14.329 0.360322 14.4697 0.21967C14.6103 0.0790175 14.8011 0 15 0C15.1989 0 15.3897 0.0790175 15.5303 0.21967C15.671 0.360322 15.75 0.551088 15.75 0.75V2.25H16.5C17.2956 2.25 18.0587 2.56607 18.6213 3.12868C19.1839 3.69129 19.5 4.45435 19.5 5.25V16.5C19.5 17.2956 19.1839 18.0587 18.6213 18.6213C18.0587 19.1839 17.2956 19.5 16.5 19.5H3C2.20435 19.5 1.44129 19.1839 0.87868 18.6213C0.316071 18.0587 0 17.2956 0 16.5V5.25C0 4.45435 0.316071 3.69129 0.87868 3.12868C1.44129 2.56607 2.20435 2.25 3 2.25H3.75V0.75C3.75 0.551088 3.82902 0.360322 3.96967 0.21967C4.11032 0.0790175 4.30109 0 4.5 0ZM18 9C18 8.60218 17.842 8.22064 17.5607 7.93934C17.2794 7.65804 16.8978 7.5 16.5 7.5H3C2.60218 7.5 2.22064 7.65804 1.93934 7.93934C1.65804 8.22064 1.5 8.60218 1.5 9V16.5C1.5 16.8978 1.65804 17.2794 1.93934 17.5607C2.22064 17.842 2.60218 18 3 18H16.5C16.8978 18 17.2794 17.842 17.5607 17.5607C17.842 17.2794 18 16.8978 18 16.5V9Z" fill="#787878"/>
+                                    </svg>                                                                                                                                                                                     
+                            </div>
+                            <div class="position-relative custom-input-text col-12 col-md-5 col-lg d-flex justify-content-between align-items-center">
+                                <div class="input position-relative d-flex align-items-center justify-content-start">
+                                    <input required type="text" name="Deliverytime" id="Deliverytime" class="position-absolute" placeholder="placeholder">
+                                    <label for="Deliverytime">Delivery time <span>*</span></label>
+                                </div>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.75 0.25C4.365 0.25 0 4.615 0 10C0 15.385 4.365 19.75 9.75 19.75C15.135 19.75 19.5 15.385 19.5 10C19.5 4.615 15.135 0.25 9.75 0.25ZM10.5 4C10.5 3.80109 10.421 3.61032 10.2803 3.46967C10.1397 3.32902 9.94891 3.25 9.75 3.25C9.55109 3.25 9.36032 3.32902 9.21967 3.46967C9.07902 3.61032 9 3.80109 9 4V10C9 10.414 9.336 10.75 9.75 10.75H14.25C14.4489 10.75 14.6397 10.671 14.7803 10.5303C14.921 10.3897 15 10.1989 15 10C15 9.80109 14.921 9.61032 14.7803 9.46967C14.6397 9.32902 14.4489 9.25 14.25 9.25H10.5V4Z" fill="#787878"/>
+                                    </svg>                                                                                                                                                                                     
+                            </div>
+                        </div>
+                    </section>
+                </form>
+                <article class="checkout-aggr d-flex flex-column justify-content-start align-items-start">
+                    <article class="title d-flex align-items-center justify-content-center">
+                        <h3 class="m-0">
+                            4. Terms & Conditions
+                        </h3>
+                    </article>
+                    <div class="check d-flex align-items-center justify-content-start">
+                        <div class="custom-check">
+                            <input type="checkbox" name="terms" id="terms">
+                        </div>
+                        <label for="terms">I have read and agreed to <span>Terms and Conditions</span></label>
+                    </div>
+                    <p class="statement">
+                        When your order is placed, we’ll send you an e-mail message acknowledging receipt of your order. If you choose to pay using an electronic payment method (credit card, debit card or net banking), you will be redirected to your bank’s website to complete your payment.
+                    </p>
+                    <a href="orderConfirm.html" class="main--btn col d-flex align-items-center justify-content-center">
+                        <p class="m-0">PLACE AN ORDER</p>
+                    </a>
+                </article>
+            </section>
+        </main>
+        <footer class="container-fluid">
+            <section class="footer--wrapper container-fluid">
+                <section class="main--content container-fluid d-flex flex-column flex-lg-row align-items-center justify-content-start justify-content-lg-between"> 
+                    <section class="content-cta d-flex flex-column flex-lg-row align-items-center align-items-lg-end">
+                        <a href="">
+                            <img src="./assets/Img/logo-light.png" alt="logo">
+                        </a>
+                        <a href="" class="footer-btn">
+                            <p>MESSAGE US</p>
+                        </a>
+                    </section>
+                    <nav class="d-flex flex-column align-items-center align-items-lg-start justify-content-end">
+                        <p>FOLLOW US</p>
+                        <div class="icon--group d-flex align-items-center justify-content-center justify-content-lg-between">
+                            <a href="">
+                                <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.93449 11.165L10.4854 7.57281H7.03883V5.24168C7.03883 4.25891 7.52027 3.30098 9.06402 3.30098H10.6311V0.242734C10.6311 0.242734 9.20891 0 7.8493 0C5.01063 0 3.15535 1.72039 3.15535 4.83496V7.57281H0V11.165H3.15535V19.849C3.78805 19.9483 4.43652 20 5.09711 20C5.7577 20 6.40617 19.9483 7.03883 19.849V11.165H9.93449Z" fill="white"/>
+                                    </svg>                                    
+                            </a>
+                            <a href="">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.92047 17.1255C14.4677 17.1255 18.5957 10.8728 18.5957 5.45033C18.5957 5.27275 18.5957 5.09596 18.5837 4.91994C19.3867 4.33904 20.08 3.61986 20.6309 2.79596C19.882 3.12779 19.0875 3.34537 18.2741 3.44154C19.1305 2.92889 19.7718 2.12193 20.078 1.17193C19.2726 1.64986 18.3913 1.98674 17.4725 2.16795C16.6966 1.34291 15.613 0.874512 14.4805 0.874512C12.2273 0.874512 10.3733 2.72857 10.3733 4.9817C10.3733 5.29428 10.409 5.60588 10.4796 5.91033C7.18207 5.74506 4.10543 4.18529 2.02285 1.62314C0.939883 3.48744 1.50023 5.90346 3.29324 7.10072C2.64031 7.08139 2.00141 6.90522 1.43086 6.58713V6.63912C1.43141 8.58498 2.81551 10.2763 4.72285 10.6615C4.11879 10.8263 3.48484 10.8503 2.87008 10.7319C3.40629 12.3993 4.95254 13.5487 6.70367 13.5815C5.25094 14.7232 3.45535 15.3434 1.60766 15.3415C1.28117 15.3409 0.955 15.3212 0.630859 15.2823C2.50719 16.4864 4.69102 17.1253 6.92047 17.1223" fill="white"/>
+                                    </svg>                                    
+                            </a>
+                            <a href="">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.09131 6.25H0.630859V20H5.09131V6.25Z" fill="white"/>
+                                    <path d="M17.241 6.41122C17.1935 6.39639 17.1487 6.38013 17.0989 6.36613C17.0389 6.35252 16.9792 6.34104 16.918 6.33135C16.6814 6.28374 16.4218 6.25 16.1177 6.25C13.5175 6.25 11.8678 8.1464 11.3247 8.87875V6.25H6.86426V20H11.3246V12.5001C11.3246 12.5001 14.6953 7.79253 16.1177 11.2499V20H20.577V10.7212C20.577 8.64366 19.157 6.91244 17.241 6.41122Z" fill="white"/>
+                                    <path d="M2.81256 4.37502C4.01727 4.37502 4.99414 3.3958 4.99414 2.18749C4.99414 0.979439 4.01722 0 2.81256 0C1.60778 0 0.630859 0.979396 0.630859 2.18749C0.630859 3.39575 1.60778 4.37502 2.81256 4.37502Z" fill="white"/>
+                                    </svg>                                    
+                            </a>
+                            <a href="">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_1008_354" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="20">
+                                    <path d="M6.4356 0.0692297C5.3716 0.11945 4.64486 0.28989 4.0098 0.538729C3.3524 0.795009 2.79515 1.13845 2.24079 1.69509C1.68579 2.25205 1.34493 2.81031 1.09059 3.46837C0.844347 4.10503 0.677487 4.8321 0.630488 5.89678C0.583848 6.96342 0.573148 7.30362 0.578348 10.0191C0.583528 12.7343 0.595508 13.0751 0.646367 14.1421C0.697227 15.2058 0.867027 15.9322 1.11587 16.5676C1.37247 17.225 1.71557 17.7819 2.27253 18.3366C2.82917 18.8913 3.38772 19.2319 4.0461 19.4865C4.6821 19.7325 5.4095 19.9 6.47384 19.9466C7.54044 19.9936 7.88096 20.004 10.5958 19.9988C13.3119 19.9936 13.6524 19.9816 14.719 19.9311C15.783 19.8802 16.5091 19.7098 17.1448 19.4616C17.8022 19.2043 18.3595 18.8619 18.9138 18.3049C19.4682 17.7482 19.809 17.1897 20.0634 16.5313C20.3096 15.8953 20.4771 15.1679 20.5235 14.1042C20.5701 13.0369 20.5811 12.696 20.5759 9.98088C20.5708 7.2654 20.5585 6.9252 20.5079 5.85888C20.4574 4.79423 20.2869 4.06813 20.0384 3.43243C19.7815 2.77503 19.4387 2.21839 18.8821 1.66337C18.3254 1.10899 17.7669 0.767489 17.1085 0.513789C16.4722 0.26755 15.7451 0.0997097 14.6808 0.0537098C13.6142 0.0063898 13.2736 -0.00397019 10.5579 0.00120981C7.84274 0.0064098 7.50224 0.0180698 6.4356 0.0692497M6.55226 18.1468C5.57734 18.1043 5.04792 17.9423 4.69508 17.8066C4.22788 17.6258 3.89448 17.409 3.54358 17.0607C3.19334 16.7111 2.97594 16.3787 2.79353 15.9124C2.65647 15.5596 2.49157 15.0308 2.44589 14.0559C2.39629 13.0019 2.38497 12.6857 2.38009 10.0155C2.37493 7.34608 2.38463 7.02984 2.43065 5.97488C2.47245 5.0006 2.63543 4.47055 2.77085 4.11803C2.95164 3.65015 3.16772 3.31741 3.51668 2.96651C3.86628 2.61561 4.1987 2.39885 4.66528 2.21645C5.01778 2.07873 5.54656 1.91511 6.52114 1.86879C7.57578 1.81889 7.89166 1.80819 10.5611 1.80301C13.2312 1.79781 13.5474 1.80721 14.6024 1.85355C15.5766 1.89599 16.1067 2.05735 16.4589 2.19375C16.9264 2.37455 17.2598 2.59001 17.6104 2.93961C17.9609 3.28921 18.1783 3.62101 18.3608 4.08853C18.4984 4.44007 18.6621 4.9695 18.7081 5.94378C18.7583 6.99842 18.7696 7.31464 18.7745 9.98412C18.7797 12.6542 18.77 12.9705 18.7236 14.0248C18.6812 14.9997 18.5195 15.5295 18.3834 15.8826C18.2026 16.3495 17.9865 16.6829 17.6372 17.0338C17.288 17.3834 16.9556 17.6015 16.4887 17.7839C16.1368 17.9213 15.6074 18.0852 14.6335 18.1315C13.5789 18.1811 13.2629 18.1925 10.5925 18.1973C7.9231 18.2025 7.6072 18.1925 6.55226 18.1468ZM14.7044 4.65459C14.7057 5.31684 15.2442 5.85306 15.9065 5.85178C16.5691 5.85048 17.1052 5.3123 17.1043 4.65003C17.103 3.98777 16.5645 3.45123 15.9019 3.45253C15.2394 3.45381 14.7031 3.99231 14.7044 4.65457M5.44256 10.0097C5.44806 12.8457 7.75138 15.1397 10.5867 15.1342C13.4224 15.1286 15.7176 12.826 15.7121 9.98994C15.7066 7.1549 13.4029 4.85965 10.5669 4.86515C7.7316 4.87067 5.43704 7.17434 5.44256 10.0097ZM7.24366 10.0061C7.24042 8.16546 8.73018 6.67018 10.5705 6.66694C12.4112 6.66338 13.9067 8.1525 13.9103 9.9935C13.9139 11.8345 12.4241 13.3294 10.5831 13.333C8.74282 13.3366 7.24722 11.8471 7.24366 10.0061Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask0_1008_354)">
+                                    <mask id="mask1_1008_354" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-1" y="-1" width="23" height="22">
+                                    <path d="M-0.230957 -0.783203H21.369V20.8171H-0.230957V-0.783203Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask1_1008_354)">
+                                    <mask id="mask2_1008_354" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-1" y="-1" width="23" height="22">
+                                    <path d="M-0.331055 -0.883057H21.4689V20.9172H-0.331055V-0.883057Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask2_1008_354)">
+                                    <mask id="mask3_1008_354" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-1" y="-1" width="23" height="22">
+                                    <path d="M-0.331055 -0.883057H21.4689V20.9172H-0.331055V-0.883057Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask3_1008_354)">
+                                    <rect x="-0.337891" y="-0.88623" width="21.8112" height="21.8112" fill="white"/>
+                                    </g>
+                                    </g>
+                                    </g>
+                                    </g>
+                                    </svg>                                    
+                            </a>
+                        </div>
+                    </nav>
+                </section>
+                <section class="sec-content container-fluid d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                    <p>
+                        ©2023 <span>In Room Amenity, LLC.</span> All Rights Reserved
+                    </p>
+                    <nav class="d-flex align-items-center justify-content-between">
+                        <a href="">
+                            Privacy Policy
+                        </a>
+                        <a href="">
+                            Terms & Conditions
+                        </a>
+                        <a href="">
+                            Request Cancellation
+                        </a>
+                    </nav>
+                </section>
+            </section>
+        </footer>
+    </div>
+    <script src="./assets/scripts/radio.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+</body>
+</html>

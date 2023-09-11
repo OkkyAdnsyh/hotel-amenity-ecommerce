@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation - InRoomAmenity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="navbar--container light--navbar">
+            <nav class="container-fluid d-flex justify-content-between align-items-center">
+                <div class="logo--container">
+                    <a href="index.html">
+                        <img src="./assets/Img/logo-dark.png" alt="logo">
+                    </a>
+                </div>
+                <button class="menu-toggle light-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-collapse d-flex flex-column flex-lg-row align-items-center justify-content-lg-between">
+                    <button class="menu-toggle-close">
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav--container d-flex flex-column flex-lg-row align-items-start align-items-lg-center">
+                        <li class="nav-link d-flex align-items-center">
+                            <a class="light--link" href="category.html">FOOD</a>
+                        </li>
+                        <li class="nav-link d-flex align-items-center">
+                            <a class="light--link" href="category.html">BEVERAGE</a>
+                        </li>
+                        <li class="nav-link d-flex align-items-center">
+                            <a class="light--link" href="category.html">Recommended Arangements</a>
+                        </li>
+                    </ul>
+                    <div class="btn-group--container d-flex flex-column flex-lg-row align-items-center">
+                        <a href="" class="btn--outline icon--btn">
+                            <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.249 4.64504C12.249 5.61176 11.8539 6.53889 11.1507 7.22247C10.4474 7.90604 9.49356 8.29007 8.499 8.29007C7.50444 8.29007 6.55061 7.90604 5.84735 7.22247C5.14409 6.53889 4.749 5.61176 4.749 4.64504C4.749 3.67831 5.14409 2.75118 5.84735 2.06761C6.55061 1.38403 7.50444 1 8.499 1C9.49356 1 10.4474 1.38403 11.1507 2.06761C11.8539 2.75118 12.249 3.67831 12.249 4.64504ZM1 18.3679C1.03213 16.4553 1.83634 14.6316 3.23918 13.2901C4.64202 11.9486 6.53109 11.1968 8.499 11.1968C10.4669 11.1968 12.356 11.9486 13.7588 13.2901C15.1617 14.6316 15.9659 16.4553 15.998 18.3679C13.6454 19.4164 11.0871 19.9576 8.499 19.9542C5.823 19.9542 3.283 19.3865 1 18.3679Z" stroke="#CE9C5D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                          
+                        </a>
+                        <a href="cart.html" class="btn--transparent">
+                            <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.6266 18.93L32.5892 5.43C32.5964 5.37022 32.5964 5.30979 32.5892 5.25C32.5892 5.05109 32.5112 4.86033 32.3723 4.71967C32.2334 4.57902 32.045 4.5 31.8486 4.5H8.10287L7.05113 0.532503C7.00493 0.378114 6.9108 0.242924 6.78271 0.146998C6.65462 0.0510726 6.4994 -0.000476135 6.34009 3.31441e-06H0.740665C0.544228 3.31441e-06 0.355837 0.0790209 0.216936 0.219673C0.0780341 0.360325 0 0.551091 0 0.750003C0 0.948916 0.0780341 1.13968 0.216936 1.28033C0.355837 1.42099 0.544228 1.5 0.740665 1.5H5.77718L10.3693 18.9675C10.4003 19.0721 10.4535 19.1686 10.5251 19.2502C10.5968 19.3318 10.6851 19.3966 10.7841 19.44C10.5075 19.9118 10.3641 20.4514 10.3693 21C10.3693 21.7957 10.6814 22.5587 11.237 23.1213C11.7927 23.6839 12.5462 24 13.332 24C14.1177 24 14.8713 23.6839 15.4269 23.1213C15.9825 22.5587 16.2946 21.7957 16.2946 21C16.2915 20.4724 16.1509 19.955 15.8873 19.5H24.1086C23.845 19.955 23.7044 20.4724 23.7013 21C23.7013 21.7957 24.0134 22.5587 24.569 23.1213C25.1246 23.6839 25.8782 24 26.6639 24C27.4497 24 28.2032 23.6839 28.7588 23.1213C29.3144 22.5587 29.6266 21.7957 29.6266 21C29.6242 20.446 29.4704 19.9034 29.1822 19.4325C29.2899 19.3897 29.3862 19.322 29.4633 19.2347C29.5405 19.1474 29.5964 19.0431 29.6266 18.93ZM26.5825 6H30.9228L30.2636 9H26.2566L26.5825 6ZM8.49542 6H13.406L13.7319 9H9.28794L8.49542 6ZM10.4804 13.5L9.68789 10.5H13.9023L14.2356 13.5H10.4804ZM10.8804 15H14.3985L14.7244 18H11.6803L10.8804 15ZM13.332 22.5C13.039 22.5 12.7526 22.412 12.509 22.2472C12.2654 22.0824 12.0755 21.8481 11.9634 21.574C11.8513 21.2999 11.8219 20.9983 11.8791 20.7074C11.9363 20.4164 12.0773 20.1491 12.2845 19.9393C12.4917 19.7296 12.7556 19.5867 13.043 19.5288C13.3303 19.4709 13.6282 19.5007 13.8988 19.6142C14.1695 19.7277 14.4009 19.92 14.5636 20.1666C14.7264 20.4133 14.8133 20.7033 14.8133 21C14.8133 21.3978 14.6572 21.7794 14.3794 22.0607C14.1016 22.342 13.7248 22.5 13.332 22.5ZM19.2573 18H16.2131L15.8873 15H19.2573V18ZM19.2573 13.5H15.7243L15.391 10.5H19.2573V13.5ZM19.2573 9H15.2281L14.9022 6H19.2573V9ZM23.7827 18H20.7386V15H24.1086L23.7827 18ZM24.279 13.5H20.7386V10.5H24.6049L24.279 13.5ZM24.7752 9H20.7386V6H25.0937L24.7752 9ZM26.6639 22.5C26.3709 22.5 26.0845 22.412 25.8409 22.2472C25.5973 22.0824 25.4075 21.8481 25.2954 21.574C25.1832 21.2999 25.1539 20.9983 25.2111 20.7074C25.2682 20.4164 25.4093 20.1491 25.6165 19.9393C25.8236 19.7296 26.0876 19.5867 26.3749 19.5288C26.6623 19.4709 26.9601 19.5007 27.2308 19.6142C27.5015 19.7277 27.7328 19.92 27.8956 20.1666C28.0584 20.4133 28.1453 20.7033 28.1453 21C28.1453 21.3978 27.9892 21.7794 27.7114 22.0607C27.4336 22.342 27.0568 22.5 26.6639 22.5ZM28.2934 18H25.2715L25.5974 15H28.9526L28.2934 18ZM25.7677 13.5L26.101 10.5H29.9451L29.2859 13.5H25.7677Z" fill="#CE9C5D"/>
+                                </svg>                            
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="greet-card--container d-flex align-items-center justify-content-center">
+                <section class="outer d-flex align-items-center justify-content-center">
+                    <article class="inner d-flex flex-column align-items-center justify-content-center">
+                        <div class="logo">
+                            <img src="./assets/Img/logo-dark.png" alt="logo">
+                        </div>
+                        <div class="title">
+                            <h2>
+                                Thank You For Your Order
+                            </h2>
+                        </div>
+                        <div class="content d-flex flex-column align-items-center justify-content-center">
+                            <p>Thank you for choosing our room amenity ordering website to enhance your stay. We are excited to be a part of making your experience truly exceptional!</p>
+                            <p>
+                                Your order has been received, and our team is working diligently to ensure that everything is prepared with care and delivered promptly to your room.
+                            </p>
+                        </div>
+                        <div class="confirmation d-flex flex-column align-items-center justify-content-center">
+                            <p class="confirm">Confirmation number: </p>
+                            <p class="number">
+                                123456
+                            </p>
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </main>
+    </div>
+    <script src="./assets/scripts/main.js"></script>
+</body>
+</html>
